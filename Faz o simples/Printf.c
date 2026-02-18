@@ -3,15 +3,14 @@
 
 int main(){ 
 
-    // legal 
+    // teste 
     /*
-    legal bem
-    legal
-    ué
+    teste 
+    teste
     */
 
     printf("teste\n");
-    printf("legal");
+    printf("teste2");
 
     return 0;
 } ;
