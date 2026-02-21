@@ -26,7 +26,7 @@ printf("Insira seu nome completo: ");
 // scanf("%s", &Nome); //nesse caso o scanf lê somente o primeiro nome, pois não lê após o espaço, para contornar isso, usamos "fgets"(File Get String).
 
 
-getchar(); //lembra do macete que de colocar um espaço atras pra dar clear no que sobrou? Então no fgets não da pra fazer isso, por isso usamos o getchar() antes, pra dar clear nessa bobonica >:3
+getchar(); //lembra do macete de colocar um espaço atras pra dar clear no que sobrou? Então no fgets não da pra fazer isso, por isso usamos o getchar() antes, pra dar clear nessa bobonica >:3
 
 fgets(Nome, sizeof(Nome), stdin); //Fgets é um tiquinho mais complicado. Primeiro especifica a variavel, depois o tamanho maximo do input (tem que ser o mesmo especificado lá em cima, porém usamos sizeof() e evitamos dor de cabeça :3) e então stdin (Standard Input).
 
