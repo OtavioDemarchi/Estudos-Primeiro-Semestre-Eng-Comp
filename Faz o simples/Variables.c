@@ -112,8 +112,7 @@ int main(){
                 printf("O computador não tem SSD, precisa trocar esse HD\n");
             }
 
-    
 
-    return 0;
+        return 0;
 
 }
