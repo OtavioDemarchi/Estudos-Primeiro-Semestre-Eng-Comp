@@ -27,10 +27,15 @@ int main() {
     printf("Insira idade Y:");
     scanf("%d", &Idade2);
 
-    if(Idade > Idade2)
-    printf("%s tem a maior idade, %d", Nome, Idade) ;
-        else
-        printf("%s tem a maior idade, %d", Nome2, Idade2);
+    if(Idade > Idade2) { 
+    printf("%s tem a maior idade, %d, ", Nome, Idade) ;
+    printf("%s tem a menor idade, %d.", Nome2, Idade2) ;
+    }    else  {
+            printf("%s tem a maior idade, %d, ", Nome2, Idade2);
+            printf("%s tem a menor idade, %d.", Nome, Idade);
+        }
+
+
 
 
     return 0;
