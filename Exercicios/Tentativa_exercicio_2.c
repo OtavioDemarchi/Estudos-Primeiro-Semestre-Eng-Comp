@@ -14,7 +14,7 @@ int NumZ1 = 0;
 int NumZ2 = 0;
 int NumZ3 = 0;
 
-printf("Insira numero X:") ;
+printf("INSIRA DOIS NUMEROS E TENHA A SOMA, SUBTRACAO, MULTIPLICACAO DOS MESMOS\nInsira numero X:") ;
 scanf("%d", &NumX);
 
 printf("Insira numero Y:");

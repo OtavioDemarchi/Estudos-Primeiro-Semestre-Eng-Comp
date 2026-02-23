@@ -12,7 +12,7 @@ int main(){
     float Altura = 0;
     float Volume = 0;
 
-    printf("Qual o comprimento (em centimetros) do seu cubo?: ");
+    printf("xXCALCULAR VOLUME DE CUBOXX\nQual o comprimento (em centimetros) do seu cubo?: ");
     scanf("%f", &Comprimento);
 
     printf("Qual a largura (em centimetros)  do seu cubo?: ");

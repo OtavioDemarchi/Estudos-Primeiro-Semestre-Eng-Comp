@@ -10,12 +10,12 @@ int main(){
     float TempCelsius = 0;
     float TempFahr = 0;
 
-    printf("Insira a temperatura em Celsius: ") ;
+    printf("xXCELSIUS PARA FAHRENHEITXx\nInsira a temperatura em Celsius: ") ;
     scanf("%f", &TempCelsius);
 
     TempFahr = (9 * TempCelsius + 160) / 5 ; 
 
-    printf("Sua temperatura em Fahrenheit: %.2f F", TempFahr);
+    printf("Sua temperatura em Fahrenheit: %.2f F\n", TempFahr);
 
 
 
