@@ -1,0 +1,71 @@
+Rodando Fedora Workstation 43 em uma VM (Virtual Machine) tentando deixar do jeitinho que quero 
+
+Vou registrar cada passo e comando aqui.
+
+Idioma: inglês
+
+Encrypt my data = True
+
+vamos ver isso vai dar problema mais pra frente
+
+Enable Third-Party Repositories
+
+Appearence {
+
+Style = Dark
+
+Accent Color = Purple
+
+} 
+
+Power {
+
+Power Mode = Perfomance
+
+} 
+
+System > Software Updates > Download
+
+Fiz o reboot bonitinho 
+ 
+Terminal > sudo dnf upgrade --refresh (fazendo update de tudo praticamente) 
+
+Terminal > sudo dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
+
+extra repos segundo o perplexity
+
+sudo dnf swap ffmpeg-free ffmpeg --allowerasing (mudando pra ffmpeg pra rodar as coisas)
+
+basicamente baixando codecs multimidia
+
+sudo dnf install intel-media-driver
+
+driver intel media  dur 
+
+The Nvidia proprietary driver doesn't support VAAPI natively, but there is a wrapper that can bridge NVDEC/NVENC with VAAPI
+
+sudo dnf install libva-nvidia-driver
+
+isso aqui é interessante pra quando tiver o note mesmo caso tenha nvidia [
+
+sudo dnf install gnome-tweaks
+
+baixar o gnome tweaks pra customizar essa bobonica
+
+
+flatpak install flathub 
+
+instalar flathub pq aparentemente é importantissimo
+
+
+spotify aparentemente é horrivel no linux entao teremos que baixar do pc e tacar no note 
+hihi (shared folder pra ter em todos os OS instalados) 
+
+aparentemente da pra pegar a iso personalizada de tudo que baixei na vm e tacar no note direto
+facilitaria minha vida 
+
+
+
+
+
+
