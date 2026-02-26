@@ -1,0 +1,55 @@
+cursoemvideo.com {
+
+Cursos de programação (
+
+PHP Básico
+
+Algoritmo
+
+HTML5 e CSS3 1/5 (In progress)
+HTML5 e CSS3 2/5
+HTML5 e CSS3 3/5
+HTML5 e CSS3 4/5
+HTML5 e CSS3 5/5
+
+Javascript
+
+Git e Github (FEITO)
+
+MySQL
+
+)
+
+
+Aprendendo Infraestrutura (
+
+Segurança da informação: 00
+Segurança da informação: 01
+Segurança da informação: 02
+Segurança da informação: 03
+Segurança da informação: 04
+
+Bases Numéricas
+
+Hardware
+
+Linux
+
+Rede de computadores
+
+Curso prático de redes de computadores e internet 
+
+Curso de endereçamento
+
+)
+
+}
+
+Livros { 
+
+Design ( 
+
+Pensar com tipos, Ellen Lupton
+
+)
+
