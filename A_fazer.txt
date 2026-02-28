@@ -50,6 +50,11 @@ Livros {
 Design ( 
 
 Pensar com tipos, Ellen Lupton
-
+Introdução a sistemas de banco de dados, Christopher J. Date
+Functional programming in Scala, Paul Chiusano, Rúnar Bjarnason
 )
+
+# https://www.instagram.com/p/DUOCPbajl4p/ 
+# https://www.instagram.com/p/DVIEn_8jB7e/
+
 

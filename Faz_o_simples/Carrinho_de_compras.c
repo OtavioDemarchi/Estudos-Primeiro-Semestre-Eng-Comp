@@ -25,7 +25,7 @@ int main() {
 
     Total = Preco * Quantidade;
 
-    printf("Voce comprou %d %s(s)\n", Quantidade, Item); //Item ta sobrando \n, temos que resolver lá quando pede o input do Item
+    printf("\nVoce comprou %d %s(s)\n", Quantidade, Item); //Item ta sobrando \n, temos que resolver lá quando pede o input do Item
 
     printf("Seu total: %s%.2f", Moeda, Total) ; //%c ta chamando a moeda, %2.f o Total, simples, só colocamos um atrás do outro.
 

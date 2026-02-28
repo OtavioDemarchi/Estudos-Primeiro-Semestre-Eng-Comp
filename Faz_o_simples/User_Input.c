@@ -20,10 +20,15 @@ printf("Insira sua media: ");
 scanf("%f", &Media);
 
 printf("Insira sua nota: ");
-scanf(" %c", &Nota); //IMPORTANTE, aqui é coloca um espaço antes do "%c" pq o \n sobra ao pegar o valor da "Media", fazendo com que o \n seja designado a "Nota", já que sobrou, o espaço faz com que haja um  clear no \n ou seja la oq sobrou antes, sacou?
+scanf(" %c", &Nota); //IMPORTANTE, aqui é coloca um espaço antes do "%c" pq o \n sobra ao pegar o valor da "Media", fazendo com que o \n seja designado a "Nota", o espaço faz o trabalho de ignorar esse \n
+
+//O \n sobra NESSE caso porque o %c lê qualquer input, nao ignora espaços, entao o enter que o usuario aperta também é considerado, esse enter é o \n e por isso ele sobra e fode o pedido posterior
+
+//Caso manje dos inglês essa parte do video explica bem: https://youtu.be/xND0t1pr3KY 1:00:26 - 1:00:54
 
 printf("Insira seu nome completo: "); 
-// scanf("%s", &Nome); //nesse caso o scanf lê somente o primeiro nome, pois não lê após o espaço, para contornar isso, usamos "fgets"(File Get String).
+// scanf("%s", &Nome); 
+//nesse caso o scanf lê somente o primeiro nome, pois não lê após o espaço, para contornar isso, usamos "fgets"(File Get String).
 
 
 getchar(); //lembra do macete de colocar um espaço atras pra dar clear no que sobrou? Então no fgets não da pra fazer isso, por isso usamos o getchar() antes, pra dar clear nessa bobonica >:3
