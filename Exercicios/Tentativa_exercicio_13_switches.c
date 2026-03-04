@@ -27,96 +27,95 @@ menu_inicial:
 printf("Qual das ofertas voce gostaria?\n1 - %d dias por R$ %.2f reais\n2 - %d dias por R$ %.2f reais\n3 - %d dias por R$ %.2f reais\n", dias1, preco1, dias2, preco2, dias3, preco3);
 scanf("%d", &usrinput);
 
-    if(usrinput == 1) {
+    switch(usrinput){
+    case 1:
 
         menu1:
 
         resultado = preco1 * dias1;
         
         printf("\nPerfeito! O total seria R$ %.2f reais, para continuar aperte 1, para voltar aperte 0\n", resultado);
-        scanf("%d", &usrinput2);
+        scanf("%d", &usrinput);
+        
+        switch(usrinput){
+        case 0:
+            goto menu_inicial; //descobri esse goto enquanto fazia essa questao, ele é muito util e simples de usar! Voce nomeia certa parte do seu codigo com "qualquer nome: " e ele fica marcado, caso voce queira que seja possivel voltar la, é só colocar goto (Ir até) e o nome que voce deu pra aquela parte, molezinha! :3  
+            break;
+
+        case 1:
+            printf("Seu pedido de R$ %.2f reais foi processado!", resultado);
+            break;
+        
         
 
-        if(usrinput2 == 0){
-            goto menu_inicial; //descobri esse goto enquanto fazia essa questao, ele é muito util e simples de usar! Voce nomeia certa parte do seu codigo com "qualquer nome: " e ele fica marcado, caso voce queira que seja possivel voltar la, é só colocar goto (Ir até) e o nome que voce deu pra aquela parte, molezinha! :3  
+        default:
+            printf("Insira um comando valido! Repetindo mensagem anterior:\n");
+            goto menu1;
+            break;
         }
+        break;
+    
 
-        else if(usrinput2 == 1){
-
-            printf("Seu pedido de %.2f foi processado!", resultado);
-
-        }
-
-            else {
-
-                printf("Insira um comando valido! Repetindo mensagem anterior:\n");
-                goto menu1;
-
-            }
-
-    }
-
-    else if(usrinput == 2) {
+    case 2:
 
         menu2:
 
         resultado = preco2 * dias2;
 
         printf("\nPerfeito! O total seria R$ %.2f reais, para continuar aperte 1, para voltar aperte 0\n", resultado);
-        scanf("%d", &usrinput2);
+        scanf("%d", &usrinput);
         
-        if(usrinput2 == 0){
+        switch(usrinput){
+            case 0:
             goto menu_inicial;
+            break;
+
+            case 1:
+            printf("Seu pedido de R$ %.2f reais foi processado!", resultado);
+            break;
+
+
+
+            default:
+            printf("Insira um comando valido! Repetindo mensagem anterior:\n");
+            goto menu2;
+            break;
         }
+    break;
 
-        else if(usrinput2 == 1){
-
-            printf("Seu pedido de %.2f foi processado!", resultado);
-
-        }
-
-            else {
-
-                printf("Insira um comando valido! Repetindo mensagem anterior:\n");
-                goto menu2;
-
-            }
-
-    }
-
-    else if(usrinput == 3) {
+    case 3:
 
         menu3:
 
         resultado = preco3 * dias3;
 
         printf("\nPerfeito! O total seria R$ %.2f reais, para continuar aperte 1, para voltar aperte 0\n", resultado);
-        scanf("%d", &usrinput2);
+        scanf("%d", &usrinput);
         
-
-        if(usrinput2 == 0){
+        switch(usrinput){
+            case 0:
             goto menu_inicial;
+            break;
+
+            case 1:
+            printf("Seu pedido de R$ %.2f reais foi processado!", resultado);
+            break;
+
+            default:
+            printf("Insira um comando valido! Repetindo mensagem anterior:\n");
+            goto menu3;
+            break;
         }
+    break;
 
-        else if(usrinput2 == 1){
-
-            printf("Seu pedido de %.2f foi processado!", resultado);
-
-        }
-
-            else {
-
-                printf("Insira um comando valido! Repetindo mensagem anterior:\n");
-                goto menu3;
-
-            }
-
-    }
-        else {
+    default:
 
             printf("Insira um comando valido! Repetindo mensagem anterior:\n");
-                goto menu_inicial; 
+            goto menu_inicial; 
+            break;
         }
+
+//com o switch foi possivel usar apenas uma variavel pro user input, nao achei muito diferente dos if else da vida, mas acho que prefiro esse do que o outro
 
     return 0;
 
