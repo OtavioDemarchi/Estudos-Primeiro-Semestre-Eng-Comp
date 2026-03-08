@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <math.h>
+#include <math.h>   
 
 int main (){
 
@@ -12,8 +12,10 @@ printf("Insira cinco numeros: ");
 
 scanf("%d %d %d %d %d", &num1, &num2, &num3, &num4, &num5);
 
+printf("xX NUMEROS IMPARES Xx\n");
+
     if(num1 % 2 != 0) { //!= indica "diferente de, nesse caso seria "se o resultado for diferente de 0"
-    printf("xX NUMEROS IMPARES Xx\n%d\n", num1);
+    printf("%d\n", num1);
     }
 
     if(num2 % 2 != 0) {

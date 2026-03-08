@@ -13,17 +13,17 @@ int main (){
 
     if(num1 == num2){
 
-        printf("Os numeros sao iguais");
+        printf("Os numeros sao iguais. %d = %d", num1, num2);
     }
 
     else if(num1 > num2){
 
-        printf("O primeiro numero eh maior");
+        printf("O primeiro numero eh maior. %d > %d", num1, num2);
     }
 
     else{
 
-        printf("O segundo numero eh maior");
+        printf("O segundo numero eh maior. %d > %d", num2, num1);
     }
 
     return 0;
