@@ -10,7 +10,7 @@ int main() {
 
     if(idade <= 12){
 
-    printf("Voce tem %d e eh uma criança\n", idade);}
+    printf("Voce tem %d e eh uma crianca\n", idade);}
 
     else if(idade <= 19){
 
