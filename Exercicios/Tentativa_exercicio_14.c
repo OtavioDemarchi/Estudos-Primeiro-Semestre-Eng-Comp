@@ -1,6 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
+
 int main() {
+
+    //14 - O programa abaixo não está executando corretamente e precisa ser arrumado Identifique e CIRCULE os erros e depois REESCREVA o programa de forma correta.
 
     int idade;
 
