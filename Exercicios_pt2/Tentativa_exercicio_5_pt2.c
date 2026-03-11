@@ -14,111 +14,129 @@ int main(){
 • Módulo (Resto da divisão);
 • Soma dos quadrados dos números;
 • Incremento;
-• Decremento;*/
+• Decremento;
+*/
+
+//AVISO O CODIGO FOI REMANUSEADO E NAO FOI TESTADO AO MAXIMO, TALVEZ TUDO FUNCIONE OU NAO, ATÉ O FIM DE 12/03 EU VERIFICO!!!!!
+
+//AVISO(2) AS OPERAÇÕES DE INCREMENTO E DECREMENTO ERAM MAIS SIMPLES DO QUE EU FIZ, DEVEM APENAS ACRESCENTAR UM OU DIMINUIR UM NO VALOR INSERIDO SEGUNDO A PATRICIA, EU COMPLIQUEI E DEI A OPÇÃO DO USUARIO ESCOLHER, EU GOSTEI ASSIM E A "IDEIA" FOI APROVADA EM SALA POR ISSO NÃO VOU MUDAR!!
 
 int inputusr, N1mod, N2mod, N1inc, N2inc, N3inc = 0;
 
 float N1, N2, Resultado = 0.0f;
 
 menu_inicial:
-printf("Qual operacao voce gostaria de fazer?\n 1 - Adicao\n 2 - Subtracao\n 3 - Multiplicacao\n 4 - Divisao\n 5 - Modulo\n 6 - Soma dos quadrados dos numeros\n 7 - Incremento\n 8 - Decremento\n");
+
+printf("Qual tipo de operacao voce gostaria de fazer?\n 1 - Operacao Simples\n 2 - Operacao Complexa\n");
 scanf("%d", &inputusr);
 
-switch (inputusr)
-{
+switch(inputusr){
+
     case 1:
-    printf("Insira os dois numeros que gostaria de somar:\n");
-    scanf("%f%f", &N1, &N2);
+    printf("Qual operacao voce gostaria de fazer?\n 1 - Adicao\n 2 - Subtracao\n 3 - Multiplicacao\n 4 - Divisao\n");
+    scanf("%d", &inputusr);
 
-    Resultado = N1+N2;
+        switch (inputusr){
 
-    printf("\nO resultado eh: %.2f\n", Resultado);
-    break;
+        case 1:
+        printf("Insira os dois numeros que gostaria de somar:\n");
+        scanf("%f%f", &N1, &N2);
+
+        Resultado = N1+N2;
+
+        printf("\nO resultado eh: %.2f\n", Resultado);
+        break;
+
+        case 2:
+        printf("Insira os dois numeros que gostaria de subtrair:\n");
+        scanf("%f%f", &N1, &N2);
+
+        Resultado = N1-N2;
+
+        printf("\nO resultado eh: %.2f\n", Resultado);
+        break;
+
+        case 3:
+        printf("Insira os dois numeros que gostaria de multiplicar:\n");
+        scanf("%f%f", &N1, &N2);
+
+        Resultado = N1*N2;
+
+        printf("\nO resultado eh: %.2f\n", Resultado);
+        break;
+
+        case 4:
+        printf("Insira os dois numeros que gostaria de fazer a operacao de divisao:\n");
+        scanf("%f%f", &N1, &N2);
+
+        Resultado = N1/N2;
+
+        printf("\nO resultado eh: %.2f\n", Resultado);
+        break;
+    }
+break;
 
     case 2:
-    printf("Insira os dois numeros que gostaria de subtrair:\n");
-    scanf("%f%f", &N1, &N2);
+    printf("Qual operacao voce gostaria de fazer?\n 1 - Modulo\n 2 - Soma dos quadrados dos numeros\n 3 - Incremento\n 4 - Decremento\n");
+    scanf("%d", &inputusr);
 
-    Resultado = N1-N2;
+    switch(inputusr){
 
-    printf("\nO resultado eh: %.2f\n", Resultado);
-    break;
+        case 1:
+        printf("Insira os dois numeros que gostaria de extrair o modulo:\n");
+        scanf("%f%f", &N1mod, &N2mod);
 
-    case 3:
-    printf("Insira os dois numeros que gostaria de multiplicar:\n");
-    scanf("%f%f", &N1, &N2);
+        Resultado = N1mod%N2mod;
 
-    Resultado = N1*N2;
+        printf("\nO resultado eh: %.2f\n", Resultado);
+        break;
 
-    printf("\nO resultado eh: %.2f\n", Resultado);
-    break;
+        case 2:
+        printf("Insira os dois numeros na qual gostaria de fazer a soma dos quadrados:\n");
+        scanf("%f%f", &N1, &N2);
 
-    case 4:
-    printf("Insira os dois numeros que gostaria de fazer a operacao de divisao:\n");
-    scanf("%f%f", &N1, &N2);
+        N1 = pow(N1, 2);
+        N2 = pow(N2, 2);
 
-    Resultado = N1/N2;
+        Resultado = N1 + N2;
 
-    printf("\nO resultado eh: %.2f\n", Resultado);
-    break;
+        printf("\nO resultado eh: %.2f\n", Resultado);
+        break;
 
-    case 5:
-    printf("Insira os dois numeros que gostaria de extrair o modulo:\n");
-    scanf("%f%f", &N1mod, &N2mod);
+        case 3:
+        printf("Insira os dois numeros que gostaria de incrementar:\n");
+        scanf("%d%d", &N1inc, &N2inc);
 
-    Resultado = N1mod%N2mod;
+        N3inc = N1inc + N2inc;
 
-    printf("\nO resultado eh: %.2f\n", Resultado);
-    break;
+        for(N1inc; N1inc <= N3inc; N1inc++)
+        {
 
-    case 6:
-    printf("Insira os dois numeros na qual gostaria de fazer a soma dos quadrados:\n");
-    scanf("%f%f", &N1, &N2);
+        printf("%d\n", N1inc);
+        }
+        break;
 
-    N1 = pow(N1, 2);
-    N2 = pow(N2, 2);
+        case 4:
+        printf("Insira os dois numeros que gostaria de decerementar:\n");
+        scanf("%d%d", &N1inc, &N2inc);
 
-    Resultado = N1 + N2;
+        N3inc = N1inc - N2inc;
 
-    printf("\nO resultado eh: %.2f\n", Resultado);
-    break;
+        for(N1inc; N1inc >= N3inc; N1inc--)
+        {
 
-    case 7:
-    printf("Insira os dois numeros que gostaria de incrementar:\n");
-    scanf("%d%d", &N1inc, &N2inc);
+        printf("%d\n", N1inc);
+        }
+        break;
 
-    N3inc = N1inc + N2inc;
+        default:
+        printf("Insira um comando valido!\n");
+        goto menu_inicial;
 
-    for(N1inc; N1inc <= N3inc; N1inc++)
-    {
-
-    printf("%d\n", N1inc);
+        break;
     }
-    break;
-
-    case 8:
-    printf("Insira os dois numeros que gostaria de decerementar:\n");
-    scanf("%d%d", &N1inc, &N2inc);
-
-    N3inc = N1inc - N2inc;
-
-    for(N1inc; N1inc >= N3inc; N1inc--)
-    {
-
-    printf("%d\n", N1inc);
-    }
-    break;
-
-    default:
-    printf("Insira um comando valido!\n");
-    goto menu_inicial;
-
-    break;
+break;
 }
 
-
-
-
-
-    return 0;
+return 0;
 }
