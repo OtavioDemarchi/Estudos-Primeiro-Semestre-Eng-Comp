@@ -6,8 +6,8 @@ PHP Básico
 
 Algoritmo
 
-HTML5 e CSS3 1/5 (In progress)
-HTML5 e CSS3 2/5
+HTML5 e CSS3 1/5 (FEITO)
+HTML5 e CSS3 2/5 (In progress)
 HTML5 e CSS3 3/5
 HTML5 e CSS3 4/5
 HTML5 e CSS3 5/5
