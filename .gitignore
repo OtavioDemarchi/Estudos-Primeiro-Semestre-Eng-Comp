@@ -1,6 +1,0 @@
-*.exe
-/Exercicios/*.exe
-/Exercicios_pt2/*.exe
-/Faz_o_simples/*.exe
-Junk/
-*.gitignore
