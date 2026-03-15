@@ -6,15 +6,7 @@
 
 int main(){
 
-/*5. Faça um programa utilizando switchs (2 switchs) aninhados para usar 8 operações matemáticas:
-• Adição;
-• Subtração;
-• Multiplicação;
-• Divisão;
-• Módulo (Resto da divisão);
-• Soma dos quadrados dos números;
-• Incremento;
-• Decremento;*/
+/*8 - Construa um algoritmo que digite 3 números, e faça a sequência do menor para o maior número; */
 
 
 int N1, N2, N3 = 0;

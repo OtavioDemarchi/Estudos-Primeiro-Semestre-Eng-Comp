@@ -17,9 +17,7 @@ int main(){
 • Decremento;
 */
 
-//AVISO O CODIGO FOI REMANUSEADO E NAO FOI TESTADO AO MAXIMO, TALVEZ TUDO FUNCIONE OU NAO, ATÉ O FIM DE 12/03 EU VERIFICO!!!!!
-
-//AVISO(2) AS OPERAÇÕES DE INCREMENTO E DECREMENTO ERAM MAIS SIMPLES DO QUE EU FIZ, DEVEM APENAS ACRESCENTAR UM OU DIMINUIR UM NO VALOR INSERIDO SEGUNDO A PATRICIA, EU COMPLIQUEI E DEI A OPÇÃO DO USUARIO ESCOLHER, EU GOSTEI ASSIM E A "IDEIA" FOI APROVADA EM SALA POR ISSO NÃO VOU MUDAR!!
+//AVISO! AS OPERAÇÕES DE INCREMENTO E DECREMENTO ERAM MAIS SIMPLES DO QUE EU FIZ, DEVEM APENAS ACRESCENTAR UM OU DIMINUIR UM NO VALOR INSERIDO, SEGUNDO A PATRICIA. EU COMPLIQUEI E DEI A OPÇÃO DO USUARIO ESCOLHER, EU GOSTEI ASSIM E A "IDEIA" FOI APROVADA EM SALA POR ISSO NÃO VOU MUDAR!!
 
 int inputusr, N1mod, N2mod, N1inc, N2inc, N3inc = 0;
 
@@ -69,12 +67,22 @@ switch(inputusr){
         printf("Insira os dois numeros que gostaria de fazer a operacao de divisao:\n");
         scanf("%f%f", &N1, &N2);
 
+        if(N2 == 0){
+            printf("Voce nao pode dividir por 0!\n");
+            goto menu_inicial;
+        }
         Resultado = N1/N2;
 
         printf("\nO resultado eh: %.2f\n", Resultado);
         break;
+
+        default:
+        printf("Insira um comando valido!\n");
+        goto menu_inicial;
+        break;
     }
 break;
+
 
     case 2:
     printf("Qual operacao voce gostaria de fazer?\n 1 - Modulo\n 2 - Soma dos quadrados dos numeros\n 3 - Incremento\n 4 - Decremento\n");
@@ -84,11 +92,11 @@ break;
 
         case 1:
         printf("Insira os dois numeros que gostaria de extrair o modulo:\n");
-        scanf("%f%f", &N1mod, &N2mod);
+        scanf("%d%d", &N1mod, &N2mod);
 
         Resultado = N1mod%N2mod;
 
-        printf("\nO resultado eh: %.2f\n", Resultado);
+        printf("\nO resultado eh: %.0f\n", Resultado);
         break;
 
         case 2:
@@ -109,10 +117,13 @@ break;
 
         N3inc = N1inc + N2inc;
 
+        printf("\n");
+
         for(N1inc; N1inc <= N3inc; N1inc++)
         {
 
         printf("%d\n", N1inc);
+
         }
         break;
 
@@ -122,20 +133,28 @@ break;
 
         N3inc = N1inc - N2inc;
 
+        printf("\n");
+
         for(N1inc; N1inc >= N3inc; N1inc--)
         {
 
         printf("%d\n", N1inc);
+
         }
         break;
 
         default:
         printf("Insira um comando valido!\n");
         goto menu_inicial;
-
         break;
     }
 break;
+
+    default:
+    printf("Insira um comando valido!\n");
+    goto menu_inicial;
+    break;
+
 }
 
 return 0;
