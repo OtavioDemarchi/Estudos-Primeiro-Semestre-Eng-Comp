@@ -11,6 +11,8 @@ for(int i = 0; i <= 200; i+=2){
     printf("\n%d", i);
 }
 
+printf("\n");
+
 printf("xX Numeros impares Xx");
 for(int i2 = 1; i2 <= 200; i2+=2){
 

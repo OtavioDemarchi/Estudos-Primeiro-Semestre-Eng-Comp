@@ -6,11 +6,6 @@ int main(){
 
     int idade, maior, menor, i, pessoas = 0;
 
-
-    //printf("Quantas pessoas serao inseridas?");
-    //scanf("%d", &pessoas);
-
-
     printf("Insira a idade da 1a pessoa:\n");   
     scanf("%d", &idade);
 

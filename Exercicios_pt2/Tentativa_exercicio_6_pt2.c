@@ -2,8 +2,7 @@
 
 int main(){
 
-    /* 6. Criar um switch case dando para o usuário as opções das vogais e mostre uma palavra na tela que forma
-com aquela letra. */
+    /* 6. Criar um switch case dando para o usuário as opções das vogais e mostre uma palavra na tela que forma com aquela letra. */
 
 char usrinput = '\0';
 
@@ -33,6 +32,10 @@ break;
 case 'U':
 printf("Ultimo");
 break;
+
+default:
+printf("Insira um comando valido!\n");
+goto menu_inicial;
 }   
 
 

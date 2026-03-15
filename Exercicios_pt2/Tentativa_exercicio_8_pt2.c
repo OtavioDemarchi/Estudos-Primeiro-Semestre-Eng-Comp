@@ -18,7 +18,5 @@ int main(){
     
     printf("Soma dos %d numeros: %d\n", quantidade, soma);
 
-
-
 return 0;
 }
