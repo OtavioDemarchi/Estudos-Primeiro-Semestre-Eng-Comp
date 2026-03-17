@@ -6,6 +6,8 @@ int main (){
 
 //6 - Construa um programa para mostrar somente números impares;
 
+//AS QUESTÕES 5 E 6 ESTÃO TROCADAS VOU ARRUMAR ASSIM QUE POSSIVEL
+
 int num1, num2, num3, num4, num5 = 0;
 
 printf("Insira cinco numeros: ");
