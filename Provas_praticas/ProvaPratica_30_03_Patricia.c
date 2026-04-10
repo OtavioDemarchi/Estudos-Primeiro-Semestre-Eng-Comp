@@ -2,6 +2,19 @@
 #include <stdlib.h>
 #include <string.h>
 
+/*
+xX Correção Datorre Xx
+
+lógica bem estruturada e funcional
+uso correto de validação e for
+erro nos valores do cálculo
+Observações:
+custo diário usado como 200000 em vez de 2000000
+cálculo mistura valor por tripulante com total
+
+NOTA FINAL: 3,5/4,0
+*/
+
 int main(){
 
     int dias = 0;
@@ -20,7 +33,6 @@ int main(){
     tripulantes:
     printf("Quantos tripulantes?\n");
     scanf("%d", &tripulantes);
-
 
     if(tripulantes <= 0){
 
