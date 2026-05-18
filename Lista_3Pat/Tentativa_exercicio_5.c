@@ -5,7 +5,7 @@ int main(){
 
     //Faça um programa que leia um número N entre 2 e 10, inclusive, e construa a sua tabuada. Tal programa só deverá ser encerrado quando o usuário digitar 0 para o número N
 
-int numero = 10; //alocar um valor só pra evitar comportamento estranho (sujeira como a Pat)
+int numero = 10; //alocar um valor só pra evitar comportamento estranho (sujeira como a Pat diz)
 int i = 0;
 
 while(numero!=0){
@@ -21,7 +21,7 @@ while(numero!=0){
     
     }
     }
-}   
+}  
 
     return 0;
 }

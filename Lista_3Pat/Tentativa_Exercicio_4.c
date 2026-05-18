@@ -3,7 +3,7 @@
 
 int main(){
 
-    //Construir um programa que calcule a soma dos números ímpares;
+    //4. Construir um programa que calcule a soma dos números ímpares;
 
 int numero;
 int soma;

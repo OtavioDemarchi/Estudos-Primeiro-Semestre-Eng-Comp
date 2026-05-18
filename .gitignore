@@ -10,6 +10,10 @@
 *.log.*
 *.sig
 
+### C Compiled Executables (Linux) ###
+Tentativa_*
+!Tentativa_*.c
+
 pkg/
 src/
 
